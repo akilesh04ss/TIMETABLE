@@ -1,24 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-
-//HLOO from akil
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
+import Home from "./components/home/home.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Home></Home>
+        {/* <Button variant="primary" className="mr-2"> */}
+        {/*  */}
+        {/* Primary */}
+        {/* </Button> */}
+      </div>
     </div>
   );
 }
